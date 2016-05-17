@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+	body
+		h1 E-Book Reader
+		div(id='thumbs', style='text-align: center')
+			img(src='./daring-greatly-thumb.jpg', height='150', style='padding:20px', alt='Daring Greatly by Brene Brown')
+			img(src='./four-agreements-thumb.jpg',height='150', style='padding:20px', alt='The Four Agreements by Don Miguel Ruiz')
+			img(src='./girlboss-thumb.jpg',height='150', style='padding:20px', alt='#GIRLBOSS by Sophia Amoruso')
+		div(style='text-align: center')
+			img(src='./daring-greatly-large.jpg' id='largeImage', height='500')
+			div(id='description') Daring Greatly by Brene Brown
+
+		script.
+			$('#thumbs img').click(function(){
+			$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
+			$('#description').html($(this).attr('alt'));
+			});
