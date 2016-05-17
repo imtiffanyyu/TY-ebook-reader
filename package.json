@@ -1,0 +1,23 @@
+{
+  "name": "ebook-reader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nycda-geeks/TY-ebook-reader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nycda-geeks/TY-ebook-reader/issues"
+  },
+  "homepage": "https://github.com/nycda-geeks/TY-ebook-reader#readme"
+}
